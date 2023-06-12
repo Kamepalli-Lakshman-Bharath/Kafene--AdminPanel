@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductListPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="log">
+        <img
+          src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+          alt="logo"
+        />
+        <div class="title">Kafene</div>
+      </div>
+
+      <div class="menu">
+        <a href="OrderListingPage.html">Order</a>
+        <a
+          href="ProductListPage.html"
+          style="
+            color: rgb(60, 193, 146);
+            border-bottom: 2px solid rgb(60, 193, 146);
+          "
+          >Products</a
+        >
+        <a href="UserListingPage.html">Users</a>
+      </div>
+      <div class="Logout">LogOut</div>
+    </nav>
+    <main>
+      <div class="page">
+        <h1>Products</h1>
+        <div class="wrapper">
+          <div class="fillter">
+            <h3>Filters</h3>
+            <p id="productsCount"></p>
+            <label>
+              <input id="Expired" type="checkbox" /> &nbsp; Expired
+            </label>
+            <br />
+            <label>
+              <input id="LowStock" type="checkbox" /> &nbsp; Low Stock
+            </label>
+          </div>
+          <!-- order table -->
+          <table class="product-table">
+            <thead>
+              <tr>
+                <td><h4>ID</h4></td>
+                <td><h4>Product Name</h4></td>
+                <td><h4>Product Brand</h4></td>
+                <td><h4>ExpiryDate</h4></td>
+                <td><h4>Unit Price</h4></td>
+                <td><h4>Stock</h4></td>
+              </tr>
+            </thead>
+
+            <tbody class="product-table productTableRow"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

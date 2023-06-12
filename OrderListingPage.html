@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OrdersListPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="log">
+        <img
+          src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+          alt="logo"
+        />
+        <div class="title">Kafene</div>
+      </div>
+
+      <div class="menu">
+        <a
+          href="OrderListingPage.html"
+          style="
+            color: rgb(60, 193, 146);
+            border-bottom: 2px solid rgb(60, 193, 146);
+          "
+          >Order</a
+        >
+        <a href="ProductListPage.html">Products</a>
+        <a href="UserListingPage.html">Users</a>
+      </div>
+      <div class="Logout">LogOut</div>
+    </nav>
+    <main>
+      <div class="page">
+        <h1>Orders</h1>
+        <div class="wrapper">
+          <div class="fillter">
+            <h3>Filters</h3>
+            <p id="ordersCount"></p>
+            <label>
+              <input id="New" name="radio" type="checkbox" /> &nbsp; New
+            </label>
+            <br />
+            <label>
+              <input id="Packed" name="radio" type="checkbox" /> &nbsp; Packed
+            </label>
+            <br />
+            <label>
+              <input id="InTransit" name="radio" type="checkbox" /> &nbsp;
+              InTransit
+            </label>
+            <br />
+            <label>
+              <input id="Delivered" name="radio" type="checkbox" /> &nbsp;
+              Delivered
+            </label>
+          </div>
+          <!-- order table -->
+          <table id="order-table">
+            <tr style="background-color: #f6f7fb">
+              <td><h4>ID</h4></td>
+              <td><h4>Customer</h4></td>
+              <td><h4>Date</h4></td>
+              <td><h4>Amount</h4></td>
+              <td><h4>Status</h4></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

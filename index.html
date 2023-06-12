@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoginPage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav>
+      <div class="log">
+        <img
+          src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+          alt="logo"
+        />
+        <div class="title">Kafene</div>
+      </div>
+
+      <div class="menu">
+        <a href="#" onclick="alert('Enter The Login credentials!')">Order</a>
+        <a href="#" onclick="alert('Enter The Login credentials!')">Products</a>
+        <a href="#" onclick="alert('Enter The Login credentials!')">Users</a>
+      </div>
+    </nav>
+    <main>
+      <!-- login form -->
+      <form id="sign-in-form">
+        <div class="heading-of-login-page">Sign In</div>
+        <input
+          class="login-inputs"
+          type="text"
+          placeholder="Enter Username"
+          id="UserName"
+        />
+        <br />
+        <input
+          class="login-inputs"
+          type="password"
+          placeholder="Enter Password"
+          id="Password"
+        />
+        <br />
+        <button id="login-btn">Login</button>
+      </form>
+    </main>
+  </body>
+</html>

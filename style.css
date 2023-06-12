@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(246, 247, 251);
+}
+/* nav-bar styles */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  height: 4em;
+  box-shadow: 0px 1px 5px rgb(7, 7, 7, 0.3);
+}
+.log {
+  margin-left: 50px;
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+.log img {
+  width: 24px;
+  height: 28px;
+}
+.title {
+  font-size: 24px;
+}
+.menu {
+  margin-left: 50px;
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+}
+/* Login-form-styles */
+#sign-in-form {
+  background-color: white;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+  width: 430px;
+  margin: 100px auto;
+  padding: 33px;
+  border-radius: 5px;
+}
+.heading-of-login-page {
+  letter-spacing: 2px;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+.login-inputs {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 35px;
+  font-size: 14px;
+}
+.login-inputs:focus {
+  outline: none;
+}
+#login-btn {
+  width: 100%;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: #20b883;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+/* OrderListingPage styles */
+.Logout {
+  font-size: 14px;
+  position: absolute;
+  color: rgb(135, 135, 135);
+  cursor: pointer;
+  right: 70px;
+}
+.page {
+  margin: 100px auto;
+  width: 83%;
+}
+#order-table {
+  width: 80%;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  margin-bottom: 15px;
+}
+tr {
+  background-color: white;
+  text-align: center;
+}
+tr,
+td,
+table {
+  border-collapse: collapse;
+  border-bottom: 4px solid rgb(246, 247, 251);
+}
+
+td {
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+.light-black {
+  color: rgb(135, 135, 135);
+}
+.table-row {
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+/* product page styles */
+.product-table {
+  width: 80%;
+}
+thead tr {
+  background-color: rgb(246, 247, 251);
+}
+/* styles for userListPage */
+#userSerchBar {
+  width: 40%;
+  border: none;
+  border-bottom: 2px solid #8c8c8c;
+  margin-bottom: 35px;
+  font-size: 15px;
+  height: 50px;
+  padding-left: 20px;
+}
+#userSerchBar:focus {
+  outline: none;
+  border-bottom: 2px solid #8c8c8c;
+}
+#userSerchBtn {
+  position: absolute;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 15px 35px;
+  background-color: #20b883;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  top: 175px;
+  translate: 570px;
+}
+.OrderPage,
+.UserPage,
+.ProductPage {
+  cursor: pointer;
+}
